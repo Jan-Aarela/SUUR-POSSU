@@ -11,6 +11,169 @@
 		(comment 1 "Jan Äärelä")
 	)
 	(lib_symbols
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x06_Pin"
 			(pin_names
 				(offset 1.016)
@@ -1503,6 +1666,12 @@
 		(uuid "07405cd6-b481-493e-9ee2-6006845892c3")
 	)
 	(junction
+		(at 34.29 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c459676-91e1-4b76-89bd-c8a0cc95b3f4")
+	)
+	(junction
 		(at 207.01 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1879,6 +2048,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "801c5933-1c85-458d-95e5-e111a50b9cbf")
+	)
+	(junction
+		(at 54.61 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d921829-3965-46cc-99dc-9ddc695accda")
 	)
 	(junction
 		(at 54.61 29.21)
@@ -2502,6 +2677,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 134.62) (xy 34.29 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14e870cc-626b-4a32-b3b3-34692f05bc01")
+	)
+	(wire
+		(pts
 			(xy 207.01 110.49) (xy 207.01 115.57)
 		)
 		(stroke
@@ -2589,6 +2774,16 @@
 			(type default)
 		)
 		(uuid "1929b437-32c6-4acb-a9fb-5d942fd21169")
+	)
+	(wire
+		(pts
+			(xy 45.72 143.51) (xy 54.61 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cdf6e0d-a476-43ae-941b-a5c23a50ec18")
 	)
 	(wire
 		(pts
@@ -3862,7 +4057,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 129.54) (xy 54.61 140.97)
+			(xy 54.61 129.54) (xy 54.61 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4282,6 +4477,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 143.51) (xy 34.29 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eb42d37-cbaf-4338-953d-cf7aaf437e62")
+	)
+	(wire
+		(pts
 			(xy 214.63 46.99) (xy 214.63 59.69)
 		)
 		(stroke
@@ -4439,6 +4644,16 @@
 			(type default)
 		)
 		(uuid "958a9600-3f49-4ab1-85c1-c57962fde9a4")
+	)
+	(wire
+		(pts
+			(xy 54.61 134.62) (xy 54.61 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "961b0872-7973-4d8f-9ee5-40827dc7b945")
 	)
 	(wire
 		(pts
@@ -5462,7 +5677,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 129.54) (xy 34.29 140.97)
+			(xy 34.29 129.54) (xy 34.29 134.62)
 		)
 		(stroke
 			(width 0)
@@ -9015,7 +9230,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Vertical_SMD_Pin1Left"
 			(at 82.55 146.05 0)
 			(effects
 				(font
@@ -10050,6 +10265,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 43.18 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9884303a-9bcb-4ce1-b9ef-bff685062347")
+		(property "Reference" "J2"
+			(at 46.99 146.6849 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 46.99 149.2249 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical"
+			(at 43.18 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 43.18 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dbd95022-c3e5-43ee-ae48-cdd68e2e7b56")
+		)
+		(pin "2"
+			(uuid "8282a86d-a2e5-4377-8bcd-096758381666")
+		)
+		(instances
+			(project ""
+				(path "/19c3cedf-93d3-4c6c-b33c-34cff50e8bf3"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 297.18 123.19 0)
 		(unit 1)
@@ -10826,7 +11111,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 48.26 128.5748 0)
 			(effects
 				(font
