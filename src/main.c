@@ -1,18 +1,40 @@
 // vim: foldmethod=marker ft=c
+
+// Vanha kunnon possu ISONA.
 // Jan Äärelä ~ 2025
+// ELEKTRONIIKKAKERHO
 
 // Tuodaan muut tiedotot.
+#include "kuviot.c"
 #include <avr/io.h>
 #include <stdint.h>
-// #include <kuviot.c>
+#include <util/delay.h>
 
-// ??
-void main() {
-  int8_t A = 8;
+// Main funktio
+void main(void) {
 
-  // Main loop
-  // Kaikki mahdolliset efektit tänne.
+  // Delay uudelleen flashäysta varten.
+  // _delay_ms(10000);
+
+  // Asetetaan kaikki PA ja PB portit outputiksi.
+  //       76543210
+  DDRA = 0b11111111;
+  DDRB = 0b11111111;
+
+  // Porttien initial state (=low).
+  PORTA = 0b00000000;
+  PORTB = 0b00000000;
+
+  // Tässäpä ne efektit looppaa.
   while (1) {
-    int8_t B = 7;
+
+    kaikki(1); // ON
+    _delay_ms(2000);
+    kaikki(0); // OFF
+    _delay_ms(2000);
+
+    // himmennys(2, 6); //(kerrat,nopeus)
+    // ympari(6,7);
+    // aalto(10,1);
   }
 }

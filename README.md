@@ -1,6 +1,8 @@
 <i>
 
-# SIKn logo ISONA, esimerkiksi kämpille loistamaan.
+# Vanha kunnon possu... <b>ISONA</b>
+
+Esimerkiksi kämpän seinälle loistamaan.
 
 ! WIP !
 

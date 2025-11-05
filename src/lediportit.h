@@ -1,12 +1,15 @@
 // vim: foldmethod=marker ft=c
+
+// Vanha kunnon possu ISONA.
 // Jan Äärelä ~ 2025
+// ELEKTRONIIKKAKERHO
 
 #include <avr/io.h>
 #include <stdint.h>
 
 //     MCU Pinnit     76543210
 uint8_t alloff_pa = 0b00000000;
-uint8_t alloff_pb = 0b11111111;
+uint8_t alloff_pb = 0b00000000;
 
 // Esim. LED-46 toimii kun PA5 HIGH ja PB4 LOW.
 
